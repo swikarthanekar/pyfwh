@@ -100,9 +100,9 @@ class FWHSurface:
         return cls(**{k: np.asarray(data[k], dtype=float) for k in keys}, name=name)
 
     @classmethod
-    def from_csv(cls, path, name=None):
+    def from_csv(cls, data_dir, dt=1e-4, name='surface'):
         from .io.csv_reader import CSVReader
-        return CSVReader(path).read(name=name or path)
+        return CSVReader(data_dir, dt=dt, name=name).read()
 
     def __repr__(self):
         return (f"FWHSurface('{self.name}', {self.n_panels} panels, "

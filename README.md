@@ -67,8 +67,9 @@ print(f"OASPL = {obs.oaspl():.1f} dB")
 Loading your own CFD data:
 
 ```python
-# from CSV (see io/csv_reader.py for column format)
-surface = FWHSurface.from_csv("surface.csv")
+# from a directory of CSV files
+# expects: data_dir/geometry.csv  +  data_dir/t_000001.csv, t_000002.csv, ...
+surface = CSVReader("my_data_dir/", dt=1e-4).read()
 
 # or directly from arrays
 surface = FWHSurface.from_dict({
