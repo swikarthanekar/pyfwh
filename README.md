@@ -30,11 +30,14 @@ pyfwh/
 ├── observer.py       Observer — listener position + results
 ├── solver.py         FWHSolver — the actual Formulation 1A integration
 ├── retarded_time.py  retarded time solver (stationary + moving surfaces)
+├── __init__.py
 ├── io/
 │   ├── base.py       abstract reader
 │   └── csv_reader.py CSV format reader
+    └── __init__.py
 └── utils/
     └── test_cases.py analytical test cases for validation
+    └── __init__.py
 ```
 
 The solver itself has no geometry-specific code. You hand it any FWHSurface
