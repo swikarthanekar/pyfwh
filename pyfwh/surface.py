@@ -17,6 +17,7 @@ class FWHSurface:
     velocity         : (M, N, 3) fluid velocity at surface [m/s]
     surface_velocity : (M, N, 3) panel velocity [m/s], zeros for stationary walls
     """
+    
     centroids:        np.ndarray
     normals:          np.ndarray
     areas:            np.ndarray
