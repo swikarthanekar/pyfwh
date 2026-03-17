@@ -6,7 +6,6 @@ from typing import Optional
 class FWHSurface:
     """
     Holds panel geometry and time-resolved flow data for a FWH integration surface.
-
     N panels, M time steps. Works for any geometry — the solver doesn't care
     whether this came from a cylinder, airfoil, or anything else.
 
