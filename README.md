@@ -4,6 +4,7 @@ Python implementation of Farassat's Formulation 1A for far-field aeroacoustic
 noise prediction. The goal is a solver that works on any surface geometry
 without needing case-specific modifications.
 
+
 ## Background
 
 The Ffowcs Williams-Hawkings equation lets you compute far-field acoustic
