@@ -98,8 +98,11 @@ class FWHSurface:
                 raise KeyError(f"missing key: {k}")
         return cls(**{k: np.asarray(data[k], dtype=float) for k in keys}, name=name)
 
-
-
+    @classmethod
+    def from_csv(cls, data_dir, dt=1e-4, name='surface'):
+        from .io.csv_reader import CSVReader
+        return CSVReader(data_dir, dt=dt, name=name).read()
+        
     def __repr__(self):
         return (f"FWHSurface('{self.name}', {self.n_panels} panels, "
                 f"{self.n_timesteps} steps, dt={self.dt:.2e}s)")
