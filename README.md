@@ -7,7 +7,9 @@ without needing case-specific modifications.
 
 ## Background
 
-
+The Ffowcs Williams-Hawkings equation lets you compute far-field acoustic
+pressure by integrating flow quantities on a surface around your noise source.
+Farassat's Formulation 1A splits this into two parts:
 
 
 ```
