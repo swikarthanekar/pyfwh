@@ -43,7 +43,6 @@ check("repr", "test" in repr(s))
 d2 = dummy_surface(4, 10)
 d2['normals'] *= 2.0
 
-
 d3 = dummy_surface(4, 10)
 d3['areas'][0] = -1.0
 try:
