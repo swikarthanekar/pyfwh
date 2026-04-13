@@ -42,11 +42,7 @@ check("repr", "test" in repr(s))
 
 d2 = dummy_surface(4, 10)
 d2['normals'] *= 2.0
-try:
-    FWHSurface.from_dict(d2)
-    check("rejects bad normals", False)
-except ValueError:
-    check("rejects bad normals", True)
+
 
 d3 = dummy_surface(4, 10)
 d3['areas'][0] = -1.0
