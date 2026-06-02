@@ -1,8 +1,9 @@
 # pyFWH
 
 Python implementation of Farassat's Formulation 1A for far-field aeroacoustic
-noise prediction. The goal is  solver that works on any surface geometry
+noise prediction. The goal is a solver that works on any surface geometry
 without needing case-specific modifications.
+
 
 ## Background
 
