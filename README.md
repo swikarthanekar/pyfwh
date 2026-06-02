@@ -11,7 +11,6 @@ The Ffowcs Williams-Hawkings equation lets you compute far-field acoustic
 pressure by integrating flow quantities on a surface around your noise source.
 Farassat's Formulation 1A splits this into two parts:
 
-
 ```
 p'(x, t) = p'_T  +  p'_L
 ```
